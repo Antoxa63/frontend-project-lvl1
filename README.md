@@ -5,7 +5,8 @@
 
 [![eslint](https://github.com/Antoxa63/frontend-project-lvl1/actions/workflows/main.yml/badge.svg)](https://github.com/Antoxa63/frontend-project-lvl1/actions/workflows/main.yml)
 
-run brain-even
-
+Run brain-even
 [![asciicast](https://asciinema.org/a/Qw0Jr1gvPSI4cTRzK7jiZVIUZ.svg)](https://asciinema.org/a/Qw0Jr1gvPSI4cTRzK7jiZVIUZ)
 
+Run brain-calc 
+[![asciicast](https://asciinema.org/a/xy6ONmC5k4yhr0nFGfoW7Ejd9.svg)](https://asciinema.org/a/xy6ONmC5k4yhr0nFGfoW7Ejd9)
