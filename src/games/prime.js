@@ -2,12 +2,13 @@ import newGame from '../index.js';
 
 const getRandomNumber = (min, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getRandomNumberLength = (min, max = 9) => Math.floor(min + Math.random() * (max + 1 - min));
-const progres = (firstNumber, secondNumber) => {
+const progres = (a, b) => {
+  let firstNumber = a;
+  const secondNumber = b;
   const result = [];
   while (result.length <= 10) {
-    let sumNumber = firstNumber;
-    sumNumber += secondNumber;
-    result.push(sumNumber);
+    firstNumber += secondNumber;
+    result.push(firstNumber);
   }
   return result;
 };
