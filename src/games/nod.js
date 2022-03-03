@@ -3,25 +3,12 @@ import newGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const numberNod = (num1, num2) => {
-  let firstNumber = num1;
-  let secondNumber = num2;
-  if (secondNumber > firstNumber) {
-    const temp = firstNumber;
-    firstNumber = secondNumber;
-    secondNumber = temp;
+  const firstNumber = num1;
+  const secondNumber = num2;
+  if (!secondNumber) {
+    return firstNumber;
   }
-  while (firstNumber !== 0 || secondNumber !== 0) {
-    if (secondNumber !== 0) {
-      firstNumber %= secondNumber;
-    } else {
-      return firstNumber;
-    }
-    if (firstNumber !== 0) {
-      secondNumber %= firstNumber;
-    } else {
-      return secondNumber;
-    }
-  }
+  return numberNod(secondNumber, firstNumber % secondNumber);
 };
 const generateQuestionAnswer = () => {
   const fromNumber = 0;
