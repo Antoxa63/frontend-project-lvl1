@@ -14,7 +14,9 @@ Run brain-calc
 Run brain-nod
 [![asciicast](https://asciinema.org/a/Neityfgb0hIIzJIWLC6nw2i8X.svg)](https://asciinema.org/a/Neityfgb0hIIzJIWLC6nw2i8X)
 
-Run brain-prime
-[![asciicast](https://asciinema.org/a/a5qeDdeto6MJ1IQxOGaJ1tYD2.svg)](https://asciinema.org/a/a5qeDdeto6MJ1IQxOGaJ1tYD2)
+Run brain-progression
+[![asciicast](https://asciinema.org/a/J16Y1rtptN7GVSkDQvUelpkxo.svg)](https://asciinema.org/a/J16Y1rtptN7GVSkDQvUelpkxo)
 
+Run brain-prime
+[![asciicast](https://asciinema.org/a/tYRAG3MxyqIpNHHVfz0efXr56.svg)](https://asciinema.org/a/tYRAG3MxyqIpNHHVfz0efXr56)
 

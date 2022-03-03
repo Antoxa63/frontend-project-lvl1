@@ -1,30 +1,20 @@
+import getRandomNumber from '../common.js';
 import newGame from '../index.js';
 
-const getRandomNumber = (min, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
-const getRandomNumberLength = (min, max = 9) => Math.floor(min + Math.random() * (max + 1 - min));
-const progres = (a, b) => {
-  let firstNumber = a;
-  const secondNumber = b;
-  const result = [];
-  while (result.length <= 10) {
-    firstNumber += secondNumber;
-    result.push(firstNumber);
+const prime = (num) => {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
   }
-  return result;
+  return true;
 };
-
-const description = 'What number is missing in the progression?';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const generateQuestionAnswer = () => {
   const fromNumber = 0;
-  const firstNumber = getRandomNumber(fromNumber);
-  const secondNumber = getRandomNumber(fromNumber);
-  const str = getRandomNumberLength(fromNumber);
-  const temp = '..';
-  let answer = progres(firstNumber, secondNumber);
-  const qiestion = answer[str].toString();
-  answer[str] = temp;
-  answer = answer.toString();
-  return [answer, qiestion];
+  const question = getRandomNumber(fromNumber);
+  const answer = prime(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 const brainPrime = () => newGame(description, generateQuestionAnswer);
 
