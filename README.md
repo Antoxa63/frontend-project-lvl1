@@ -10,9 +10,7 @@ Run brain-even
 
 Run brain-calc 
 [![asciicast](https://asciinema.org/a/xy6ONmC5k4yhr0nFGfoW7Ejd9.svg)](https://asciinema.org/a/xy6ONmC5k4yhr0nFGfoW7Ejd9)
-<<<<<<< HEAD
 
 Run brain-nod
 [![asciicast](https://asciinema.org/a/Neityfgb0hIIzJIWLC6nw2i8X.svg)](https://asciinema.org/a/Neityfgb0hIIzJIWLC6nw2i8X)
-=======
->>>>>>> 0b25564926b7255d7b0707f8ac197bb7438401c8
+
