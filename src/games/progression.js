@@ -1,12 +1,14 @@
 import newGame from '../index.js';
 
-const getRandomNumber = (min, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
+const getRandomNumber = (min = 1, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getRandomNumberLength = (min, max = 9) => Math.floor(min + Math.random() * (max + 1 - min));
-const progres = (a, b) => {
-  let firstNumber = a;
+const getRandomNumberString = (min = 5, max = 10) =>   Math.floor(min + Math.random() * (max + 1 - min));
+
+const progres = (a, b) => {  
+  let firstNumber = a;  
   const secondNumber = b;
   const result = [];
-  while (result.length <= 10) {
+  while (result.length <= getRandomNumberString()) {
     firstNumber += secondNumber;
     result.push(firstNumber);
   }
@@ -23,7 +25,7 @@ const generateQuestionAnswer = () => {
   let answer = progres(firstNumber, secondNumber);
   const qiestion = answer[str].toString();
   answer[str] = temp;
-  answer = answer.toString();
+  answer = answer.join(' ');
   return [answer, qiestion];
 };
 const brainProgression = () => newGame(description, generateQuestionAnswer);
