@@ -18,6 +18,6 @@ const generateQuestionAnswer = () => {
   const answer = numberNod(firstNumber, secondNumber).toString();
   return [question, answer];
 };
-const brainNod = () => newGame(description, generateQuestionAnswer);
+const brainGcd = () => newGame(description, generateQuestionAnswer);
 
-export default brainNod;
+export default brainGcd;
