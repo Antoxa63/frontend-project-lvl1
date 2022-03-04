@@ -16,8 +16,8 @@ brain-even:
 brain-calc:
 		node bin/brain-calc.js
 
-brain-nod:
-		node bin/brain-nod.js			
+brain-gcd:
+		node bin/brain-gcd.js			
 
 brain-prime:
 		node bin/brain-prime.js		
