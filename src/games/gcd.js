@@ -1,5 +1,5 @@
 import getRandomNumber from '../common.js';
-import newGame from '../index.js';
+import gameStructure from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const numberNod = (num1, num2) => {
@@ -18,6 +18,6 @@ const generateQuestionAnswer = () => {
   const answer = numberNod(firstNumber, secondNumber).toString();
   return [question, answer];
 };
-const brainGcd = () => newGame(description, generateQuestionAnswer);
+const brainGcd = () => gameStructure(description, generateQuestionAnswer);
 
 export default brainGcd;

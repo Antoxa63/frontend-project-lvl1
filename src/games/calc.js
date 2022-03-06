@@ -1,5 +1,5 @@
 import getRandomNumber from '../common.js';
-import newGame from '../index.js';
+import gameStructure from '../index.js';
 
 const calculateExpression = (firstNumber, operator, secondNumber) => {
   let correctAnswer;
@@ -44,6 +44,6 @@ const generateQuestionAnswer = () => {
   return [question, answer];
 };
 
-const brainCalc = () => newGame(description, generateQuestionAnswer);
+const brainCalc = () => gameStructure(description, generateQuestionAnswer);
 
 export default brainCalc;

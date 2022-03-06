@@ -1,9 +1,9 @@
-import newGame from '../index.js';
+import gameStructure from '../index.js';
 
 const getRandomNumber = (min = 1, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getRandomNumberLength = (min, max = 9) => Math.floor(min + Math.random() * (max + 1 - min));
 
-const progres = (a, b) => {
+const generatString = (a, b) => {
   let firstNumber = a;
   const secondNumber = b;
   const result = [];
@@ -21,12 +21,12 @@ const generateQuestionAnswer = () => {
   const secondNumber = getRandomNumber(fromNumber);
   const str = getRandomNumberLength(fromNumber);
   const temp = '..';
-  let answer = progres(firstNumber, secondNumber);
+  let answer = generatString(firstNumber, secondNumber);
   const qiestion = answer[str].toString();
   answer[str] = temp;
   answer = answer.join(' ');
   return [answer, qiestion];
 };
-const brainProgression = () => newGame(description, generateQuestionAnswer);
+const brainProgression = () => gameStructure(description, generateQuestionAnswer);
 
 export default brainProgression;

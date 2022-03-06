@@ -1,7 +1,7 @@
 import getRandomNumber from '../common.js';
-import newGame from '../index.js';
+import gameStructure from '../index.js';
 
-const prime = (num) => {
+const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
       return false;
@@ -13,9 +13,9 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 const generateQuestionAnswer = () => {
   const fromNumber = 0;
   const question = getRandomNumber(fromNumber);
-  const answer = prime(question) ? 'yes' : 'no';
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
-const brainPrime = () => newGame(description, generateQuestionAnswer);
+const brainPrime = () => gameStructure(description, generateQuestionAnswer);
 
 export default brainPrime;
