@@ -2,13 +2,13 @@ import gameStructure from '../index.js';
 
 const getRandomNumber = (min = 1, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getRandomNumberLength = (min, max = 5) => Math.floor(min + Math.random() * (max + 1 - min));
-const getRandomNumberRound = (min = 5, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
+const getRandomRound = (min = 5, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
 
 const generatString = (a, b) => {
   let firstNumber = a;
   const secondNumber = b;
   const result = [];
-  while (result.length < getRandomNumberRound()) {
+  while (result.length < getRandomRound()) {
     firstNumber += secondNumber;
     result.push(firstNumber);
   }
