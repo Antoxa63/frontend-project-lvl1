@@ -2,7 +2,7 @@ import gameStructure from '../index.js';
 
 const getRandomNumber = (min = 1, max = 20) => Math.floor(min + Math.random() * (max + 1 - min));
 const getRandomNumberLength = (min, max = 5) => Math.floor(min + Math.random() * (max + 1 - min));
-const getRandomRound = (min = 5, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
+const getRandomRound = (min = 6, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
 
 const generatString = (a, b) => {
   let firstNumber = a;
